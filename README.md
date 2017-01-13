@@ -1,9 +1,3 @@
-# diner
+#diner
 
-DinerJS is maybe someday going to be a thing.
-
-Right now it has one function: diner.baconandeggs.
-
-Have fun!
-
-(If you can.)
+Diner is an implementation of Redux, with purposefully added verbosity to aid in learning it and using it.
