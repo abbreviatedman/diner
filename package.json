@@ -1,0 +1,32 @@
+{
+  "name": "diner",
+  "version": "0.0.3",
+  "description": "",
+  "main": "diner.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abbreviatedman/diner.git"
+  },
+  "keywords": [
+    "ascii"
+  ],
+  "author": "Colin Jaffe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/abbreviatedman/diner/issues"
+  },
+  "homepage": "https://github.com/abbreviatedman/diner#readme",
+  "devDependencies": {
+    "express": "^4.14.0",
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "express": "^4.14.0",
+    "node": "^0.0.0",
+    "nodemon": "^1.11.0"
+  }
+}
