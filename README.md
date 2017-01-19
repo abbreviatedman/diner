@@ -100,9 +100,9 @@ Get your data onto the table where you can eat/use it:
 const currentTotal = restaurant.serve();
 ```
 
-That's all you need!
+That's all you need to get a diner app up and running.
 
-But wait, there's more. Do you have a front end that wants to run a function every time there's a new `dish`? Well!:
+But wait, there's more! Do you have a front end that wants to run a function every time there's a new `dish`? Well!:
 
 ```javascript
 restaurant.frequent(callbackFunction);
@@ -110,7 +110,7 @@ restaurant.frequent(callbackFunction);
 
 Now that `callbackFunction` will run every time your application's state updates.
 
-Does your front end want to stop "listening" to the state? Store the return value of `frequent`.
+Does your front end want to stop "listening" to the state? Stop throwing away your old return values. We can use them!
 
 ```javascript
 const dinersClubMembership = restaurant.frequent(callbackFunction);
@@ -124,7 +124,7 @@ dinersClubMembership.leaveDinersClub();
 
 That's it!
 
-What we need to add to make diner a full-functioned Redux-like:
+Now here's what we need to add to make diner a full-functioned Redux-like:
 
 1. Sanity checks. We have literally none! Are you passing the right things in the right places? WHO KNOWS.
 2. Clearer docs for those who've never used Redux before.
