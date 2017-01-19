@@ -133,5 +133,4 @@ Want to help? Do one of those things!
 
 Have your own ideas for how to improve DinerJS? Do one of _those_ things.
 
-Later!
--Colin
+Thanks for reading!
