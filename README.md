@@ -1,4 +1,4 @@
-Diner is an implementation of Redux that uses a consistent metaphor so you can quickly grasp it.
+DinerJS is an implementation of Redux that uses a consistent metaphor so you can quickly grasp it.
 
 I'll be writing more about its design soon enough, and if you want to help make Diner better, please contribute! But in the meantime, here's just the basic usage:
 
@@ -9,11 +9,15 @@ Download it in the command line using npm:
 
 Import it into your project:
 
-```javascript import diner from 'diner';```
+```javascript
+import diner from 'diner';
+```
 
 If you want to avoid writing `diner.owner.hire` later you can import the following instead:
 
-`import {owner} from 'diner';`
+```javascript
+import {owner} from 'diner';
+```
 
 But I'd encourage you not to destructure beyond that: the point here is to encourage thinking in the full metaphor. Who's hiring? The `owner` is. Noun-verb.
 
@@ -66,39 +70,55 @@ const mathCook = (dish = {total: 0}, order) {
 
 Set up a clean `bill`:
 
-`const cleanBill = {total: 0};`
+```javascript
+const cleanBill = {total: 0};
+```
 
 Wire it together:
 
-`const restaurant = owner.hire(mathCook, cleanBill);`
+```javascript
+const restaurant = owner.hire(mathCook, cleanBill);
+```
 
 That's design. How do we use it?
 
 Give your `order` to your `waiter`. He'll translate it to a `ticket` you can give to the `chef`. 
 
-`const ticket = addWaiter(3);`
+```javascript
+const ticket = addWaiter(3);
+```
 
 Tell the `chef` to make that `ticket` into a _meal_:
 
-`restaurant.prepare(ticket);`
+```javascript
+restaurant.prepare(ticket);
+```
 
 Get your data onto the table where you can eat/use it:
 
-`const currentTotal = restaurant.serve();`
+```javascript
+const currentTotal = restaurant.serve();
+```
 
 Have a front end that wants to run a function every time there's a new `dish`? Well!:
 
-`restaurant.frequent(callbackFunction);`
+```javascript
+restaurant.frequent(callbackFunction);
+```
 
 Now that will run every time your application's state updates.
 
 Does your front end want to stop "listening" to the state? Store the return value of `frequent`.
 
-`const dinersClubMembership = restaurant.frequent(callbackFunction);`
+```javascript
+const dinersClubMembership = restaurant.frequent(callbackFunction);
+```
 
 Then, when your component's ready to leave:
 
-`dinersClubMembership.leaveDinersClub();`
+```javascript
+dinersClubMembership.leaveDinersClub();
+```
 
 That's it!
 
@@ -111,7 +131,7 @@ What we need to add to make it a full-functioned Redux-like:
 
 Want to help? Do one of those things!
 
-Have your own ideas for how to improve diner? Do one of _those_ things.
+Have your own ideas for how to improve DinerJS? Do one of _those_ things.
 
 Later!
 -Colin
