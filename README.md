@@ -4,43 +4,51 @@ I'll be writing more about its design soon enough, and if you want to help make 
 
 Download it:
 
-npm install diner
+`npm install diner`
+
 
 Import it into your project:
 
-import diner from 'diner';
+`import diner from 'diner';`
 
-If you want to avoid writing diner.owner.hire you can import the following instead:
+If you want to avoid writing `diner.owner.hire` later you can import the following instead:
 
-import {owner} from 'diner';
+`import {owner} from 'diner';`
 
-But I'd encourage you not to destructure beyond that: the point here is to encourage thinking in the full metaphor. Who's hiring? The owner is. Noun-verb.
+But I'd encourage you not to destructure beyond that: the point here is to encourage thinking in the full metaphor. Who's hiring? The `owner` is. Noun-verb.
 
-Make a menu:
+Make a `menu`:
 
+```javascript
 const menu = {
     ADD_TO_TOTAL: 'ADD_TO_TOTAL'
     SUBTRACT_FROM_TOTAL: 'SUBTRACT_FROM_TOTAL'
 };
+```
 
-Define your waiters:
+Define your `waiters`:
 
+```javascript
 const addWaiter = (number) => {
     return {
         menuItem: menu.ADD_TO_TOTAL,
         number: number
     }
 };
+```
 
+```javascript
 const subtractWaiter = (number) => {
     return {
         menuItem: menu.SUBTRACT_FROM_TOTAL,
         number: number
-    }
+    }`
 };
+```
 
-Write out your cook:
+Write out your `cook`:
 
+```javascript
 const mathCook = (dish = {total: 0}, order) {
     const newDish = Object.assign({}, dish);
     switch (order.menuItem) {
@@ -54,42 +62,43 @@ const mathCook = (dish = {total: 0}, order) {
     }
     return newDish;
 }
+```
 
-Set up a clean bill:
+Set up a clean `bill`:
 
-const cleanBill = {total: 0};
+`const cleanBill = {total: 0};`
 
 Wire it together:
 
-const restaurant = owner.hire(mathCook, cleanBill);
+`const restaurant = owner.hire(mathCook, cleanBill);`
 
 That's design. How do we use it?
 
-Give your order to your waiter. He'll translate it to a ticket you can give to the chef. 
+Give your `order` to your `waiter`. He'll translate it to a `ticket` you can give to the `chef`. 
 
-const ticket = addWaiter(3);
+`const ticket = addWaiter(3);`
 
-Tell the chef to make that ticket into a MEAL:
+Tell the `chef` to make that `ticket` into a _meal_:
 
-restaurant.prepare(ticket);
+`restaurant.prepare(ticket);`
 
 Get your data onto the table where you can eat/use it:
 
-const currentTotal = restaurant.serve();
+`const currentTotal = restaurant.serve();`
 
-Have a front end that wants to run a function every time there's a new dish? Well!:
+Have a front end that wants to run a function every time there's a new `dish`? Well!:
 
-restaurant.frequent(callbackFunction);
+`restaurant.frequent(callbackFunction);`
 
 Now that will run every time your application's state updates.
 
-Does your front end want to stop "listening" to the state? Store the return value of frequent.
+Does your front end want to stop "listening" to the state? Store the return value of `frequent`.
 
-const dinersClubMembership = restaurant.frequent(callbackFunction);
+`const dinersClubMembership = restaurant.frequent(callbackFunction);`
 
 Then, when your component's ready to leave:
 
-dinersClubMembership.leaveDinersClub();
+`dinersClubMembership.leaveDinersClub();`
 
 That's it!
 
