@@ -47,6 +47,4 @@ const diner = {
   }
 };
 
-export const {owner} = diner;
-
-export default diner;
+module.exports = diner;
