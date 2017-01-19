@@ -1,4 +1,4 @@
-DinerJS is an implementation of Redux that uses a consistent metaphor so you can quickly grasp it.
+DinerJS is a re-implementation of Redux that uses a consistent metaphor so you can quickly grasp it.
 
 I'll be writing more about its design soon enough, and if you want to help make Diner better, please contribute! But in the meantime, here's just the basic usage:
 
