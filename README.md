@@ -2,14 +2,14 @@ Diner is an implementation of Redux that uses a consistent metaphor so you can q
 
 I'll be writing more about its design soon enough, and if you want to help make Diner better, please contribute! But in the meantime, here's just the basic usage:
 
-Download it:
+Download it in the command line using npm:
 
 `npm install diner`
 
 
 Import it into your project:
 
-`import diner from 'diner';`
+```javascript import diner from 'diner';```
 
 If you want to avoid writing `diner.owner.hire` later you can import the following instead:
 
