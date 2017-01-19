@@ -1,4 +1,4 @@
-const baconAndEggs = require('./baconAndEggs');
+import baconAndEggs from './baconAndEggs';
 
 const diner = {
   owner: {
@@ -13,7 +13,7 @@ const diner = {
         dinersClubMembers.forEach(clubMember => clubMember());
       };
 
-      prepare({menuItem: "Don't use this menuItem, okay? It's for initializing a clean state. So..."});
+      prepare({menuItem: '"We stopped to eat breakfast at a diner run by a white-haired lady who gave us extra-large portions of potatoes as church-bells rang in the nearby town. Then off again." - Jack Kerouac, On the Road'});
 
       const serve = () => {
         return bill;
@@ -47,6 +47,6 @@ const diner = {
   }
 };
 
-module.exports = diner;
+export const {owner} = diner;
 
-//waiter.takeOrder inconvenience method?
+export default diner;

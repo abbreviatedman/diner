@@ -1,8 +1,8 @@
 {
   "name": "diner",
-  "version": "0.0.3",
-  "description": "",
-  "main": "diner.js",
+  "version": "0.0.4",
+  "description": "Diner is an implementation of Redux that uses a consistent metaphor so you can quickly grasp it.",
+  "main": "index.js",
   "directories": {
     "test": "tests"
   },
@@ -12,7 +12,12 @@
     "url": "git+https://github.com/abbreviatedman/diner.git"
   },
   "keywords": [
-    "ascii"
+    "ascii",
+    "redux",
+    "javascript",
+    "state",
+    "metaphor",
+    "MDD"
   ],
   "author": "Colin Jaffe",
   "license": "MIT",
@@ -21,12 +26,7 @@
   },
   "homepage": "https://github.com/abbreviatedman/diner#readme",
   "devDependencies": {
-    "express": "^4.14.0",
-    "nodemon": "^1.11.0"
   },
   "dependencies": {
-    "express": "^4.14.0",
-    "node": "^0.0.0",
-    "nodemon": "^1.11.0"
   }
 }
