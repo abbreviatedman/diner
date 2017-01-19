@@ -1,6 +1,6 @@
 Diner is an implementation of Redux that uses a consistent metaphor so you can quickly grasp it.
 
-I'll be writing more about its design soon enough, and if you want to help make Diner better, please contribute! But in the meantime, here's just the basic usage!:
+I'll be writing more about its design soon enough, and if you want to help make Diner better, please contribute! But in the meantime, here's just the basic usage:
 
 Download it:
 
@@ -42,7 +42,7 @@ const subtractWaiter = (number) => {
     return {
         menuItem: menu.SUBTRACT_FROM_TOTAL,
         number: number
-    }`
+    }
 };
 ```
 
@@ -108,6 +108,10 @@ What we need to add to make it a full-functioned Redux-like:
 2. Clearer docs for those who've never used Redux before.
 3. The ability to incorporate middleware. ("Specials"?)
 4. The ability to combine reducers. ("Hire a head chef"?)
+
+Want to help? Do one of those things!
+
+Have your own ideas for how to improve diner? Do one of _those_ things.
 
 Later!
 -Colin
