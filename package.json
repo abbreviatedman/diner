@@ -1,6 +1,6 @@
 {
   "name": "diner",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "DinerJS is an implementation of Redux that uses a consistent metaphor so you can quickly grasp it.",
   "main": "index.js",
   "directories": {
