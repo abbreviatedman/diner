@@ -50,10 +50,16 @@ const subtractWaiter = (number) => {
 };
 ```
 
+Set up a clean `bill`:
+
+```javascript
+const cleanBill = {total: 0};
+```
+
 Write out your `cook`:
 
 ```javascript
-const mathCook = (dish = {total: 0}, order) {
+const mathCook = (dish = cleanBill, order) {
     const newDish = Object.assign({}, dish);
     switch (order.menuItem) {
         case menu.ADD_TO_TOTAL:
@@ -68,19 +74,15 @@ const mathCook = (dish = {total: 0}, order) {
 }
 ```
 
-Set up a clean `bill`:
-
-```javascript
-const cleanBill = {total: 0};
-```
-
 Are you ready to wire it all together? Me too!
 
 ```javascript
 const restaurant = owner.hire(mathCook, cleanBill);
 ```
 
-That's design. How do we use it?
+(Note that the second parameter is optional, and omitting it strengthens the metaphor, making omitting it the Diner Way. It's good practice to initialize your `cleanBill` somewhere, but you can alternately declare it in your `cook`, as above, or _alternately_ alternately you can `restaurant.prepare` it as a `ticket`. But more on `restaurant.prepare` in just a second!)
+
+So that's design. How do we _use_ it?
 
 Give your `order` to your `waiter`. He'll translate it to a `ticket` you can give to the `chef`. 
 

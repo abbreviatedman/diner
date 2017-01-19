@@ -2,7 +2,7 @@ const baconAndEggs = require('./baconAndEggs');
 
 const diner = {
   owner: {
-    hire: (cook, cleanBill) => {
+    hire: (cook, cleanBill = {}) => {
 
       let dinersClubMembers = [];
 
@@ -23,15 +23,13 @@ const diner = {
 
         dinersClubMembers.push(dinersClubMember);
 
-        const dinersClub = {
-          dinersClubMembership: {
+        const dinersClubMembership = {
             leaveDinersClub: () => {
               const regularTable = dinersClubMembers.indexOf(dinersClubMember);
               dinersClubMembers.splice(regularTable, 1);
             }
-          }
-        };
-        return dinersClub;
+          };
+        return dinersClubMembership;
       };
 
     const restaurant = {
