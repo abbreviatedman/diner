@@ -74,7 +74,7 @@ Set up a clean `bill`:
 const cleanBill = {total: 0};
 ```
 
-Wire it together:
+Are you ready to wire it all together? Me too!
 
 ```javascript
 const restaurant = owner.hire(mathCook, cleanBill);
@@ -100,13 +100,15 @@ Get your data onto the table where you can eat/use it:
 const currentTotal = restaurant.serve();
 ```
 
-Have a front end that wants to run a function every time there's a new `dish`? Well!:
+That's all you need!
+
+But wait, there's more. Do you have a front end that wants to run a function every time there's a new `dish`? Well!:
 
 ```javascript
 restaurant.frequent(callbackFunction);
 ```
 
-Now that will run every time your application's state updates.
+Now that `callbackFunction` will run every time your application's state updates.
 
 Does your front end want to stop "listening" to the state? Store the return value of `frequent`.
 
@@ -122,9 +124,9 @@ dinersClubMembership.leaveDinersClub();
 
 That's it!
 
-What we need to add to make it a full-functioned Redux-like:
+What we need to add to make diner a full-functioned Redux-like:
 
-1. Sanity checks. We have none!
+1. Sanity checks. We have literally none! Are you passing the right things in the right places? WHO KNOWS.
 2. Clearer docs for those who've never used Redux before.
 3. The ability to incorporate middleware. ("Specials"?)
 4. The ability to combine reducers. ("Hire a head chef"?)
