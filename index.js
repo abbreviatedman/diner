@@ -1,4 +1,4 @@
-import baconAndEggs from './baconAndEggs';
+const baconAndEggs = require('./baconAndEggs');
 
 const diner = {
   owner: {

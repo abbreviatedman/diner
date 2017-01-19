@@ -14,4 +14,4 @@ const baconAndEggs = () => {
 Original image copyright Joan G. Stark.`;
 };
 
-export default baconAndEggs;
+module.exports = baconAndEggs;
