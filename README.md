@@ -96,7 +96,9 @@ Tell the `chef` to make that `ticket` into a _meal_:
 restaurant.prepare(ticket);
 ```
 
-Get your data onto the table where you can eat/use it:
+Now your data is on our central, read-only state tree.
+
+When you want your data back so you can eat/use it:
 
 ```javascript
 const currentTotal = restaurant.serve();
