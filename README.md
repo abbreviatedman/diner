@@ -2,10 +2,11 @@ DinerJS is an implementation of Redux that uses a consistent metaphor so you can
 
 I'll be writing more about its design soon enough, and if you want to help make Diner better, please contribute! But in the meantime, here's just the basic usage:
 
-Download it in the command line using npm:
+Download it in the command line using `npm` or `yarn`:
 
-`npm install diner`
-
+```javascript
+npm install diner
+```
 
 Import it into your project:
 
@@ -13,7 +14,7 @@ Import it into your project:
 import diner from 'diner';
 ```
 
-If you want to avoid writing `diner.owner.hire` later you can import the following instead:
+If you want to write `owner.hire` later instead of writing out `diner.owner.hire` every time, you can import the following instead:
 
 ```javascript
 import {owner} from 'diner';
@@ -80,7 +81,21 @@ Are you ready to wire it all together? Me too!
 const restaurant = owner.hire(mathCook, cleanBill);
 ```
 
-(Note that the second parameter is optional, and omitting it strengthens the metaphor, making omitting it the Diner Way. It's good practice to initialize your `cleanBill` somewhere, but you can alternately declare it in your `cook`, as above, or _alternately_ alternately you can `restaurant.prepare` it as a `ticket`. But more on `restaurant.prepare` in just a second!)
+(Note that the second parameter is optional, and omitting it strengthens the metaphor, making omitting it the Diner Way. It's good practice to initialize your `cleanBill` somewhere, but you can always declare it in your `cook`, as above.
+
+If your `restaurant` is getting bigger and your `cook` is getting overworked (think of the `switch` statement as his apron getting messier and messier), bring in a `gm` to `assembleTeam` and give you a `headChef` to manage it all.
+
+Split up your `cooks` into separate functions. Then do the following:
+
+```javascript
+import {gm} from 'diner';
+
+const headChef = gm.assembleTeam(math: mathCook, users: userCook, cookies: cookieCook, orders: orderCook);
+
+owner.hire(headChef);
+```
+
+Now your state will hold an object with those keys, and each key will have the state that that particular `cook` is in charge of.
 
 So that's design. How do we _use_ it?
 
@@ -99,7 +114,17 @@ restaurant.prepare(ticket);
 Get your data onto the table where you can eat/use it:
 
 ```javascript
-const currentTotal = restaurant.serve();
+const {total} = restaurant.serve();
+```
+
+Or, if you have a headChef system going on, you'll basically have a `buffet` instead of a `dish`, and you'll have to choose which `dish` you want:
+
+```javascript
+const {math} = restaurant.serve();
+const {total} = math;
+
+const {users} = restaurant.serve();
+const {userList} = users;
 ```
 
 That's all you need to get a diner app up and running.
@@ -131,7 +156,6 @@ Now here's what we need to add to make diner a full-functioned Redux-like:
 1. Sanity checks. We have literally none! Are you passing the right things in the right places? WHO KNOWS.
 2. Clearer docs for those who've never used Redux before.
 3. The ability to incorporate middleware. ("Specials"?)
-4. The ability to combine reducers. ("Hire a head chef"?)
 
 Want to help? Do one of those things!
 

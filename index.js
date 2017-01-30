@@ -1,6 +1,31 @@
 const baconAndEggs = require('./baconAndEggs');
-
+// const
 const diner = {
+  gm: {
+    assembleTeam: (cooks) => {
+
+      const hireCooksOnly = (cooksObject, weedingOutProcess) => {
+        return Object.keys(cooksObject).reduce((moreSelectiveCooksObject, cookKey) => { //COOOKIEEE
+            if (weedingOutProcess(cooksObject[cookKey])) {
+              moreSelectiveCooksObject[cookKey] = cooksObject[cookKey];
+            }
+            return moreSelectiveCooksObject;
+        }, {});
+      };
+
+      const assignSpecialtiesToCooks = (cooksObject, taskAssigningProcess) => {
+        return Object.keys(cooksObject).reduce((dividedLaborObject, cookKey) => {
+          dividedLaborObject[cookKey] = taskAssigningProcess(cooksObject[cookKey], cookKey);
+          return dividedLaborObject;
+        }, {});
+      };
+
+    const hiredCooks = hireCooksOnly(cooks, cook => typeof cook === 'function');
+    const headChef = (dish = {}, ticket) => assignSpecialtiesToCooks(hiredCooks, (cook, cookKey) => cook(dish[cookKey], ticket));
+    return headChef;
+    }
+  },
+
   owner: {
     hire: (cook, cleanBill = {}) => {
 
