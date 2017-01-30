@@ -119,7 +119,7 @@ When you want your data back so you can eat/use it:
 const {total} = restaurant.serve();
 ```
 
-Or, if you have a headChef system going on, you'll basically have a `buffet` instead of a `dish`, and you'll have to choose which `dish` you want:
+Or, if you have a headChef system going on, you'll have a `buffet` instead of a `dish`, and you'll have to choose which `dish` you want:
 
 ```javascript
 const {math} = restaurant.serve();
@@ -145,7 +145,7 @@ Does your front end want to stop "listening" to the state? Stop throwing away yo
 const dinersClubMembership = restaurant.frequent(callbackFunction);
 ```
 
-Then, when your component's ready to leave:
+Then, when your component's ready to stop 'listening':
 
 ```javascript
 dinersClubMembership.leaveDinersClub();
