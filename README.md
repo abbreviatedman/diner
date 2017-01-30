@@ -57,6 +57,8 @@ Set up a clean `bill`:
 const cleanBill = {total: 0};
 ```
 
+(The `cleanBill` is very important to setting up your state. When you have everything set up, Diner will populate the state with your `cleanBill` for you!)
+
 Write out your `cook`:
 
 ```javascript
@@ -78,14 +80,12 @@ const mathCook = (dish = cleanBill, order) {
 Are you ready to wire it all together? Me too!
 
 ```javascript
-const restaurant = owner.hire(mathCook, cleanBill);
+const restaurant = owner.hire(mathCook);
 ```
-
-(Note that the second parameter is optional, and omitting it strengthens the metaphor, making omitting it the Diner Way. It's good practice to initialize your `cleanBill` somewhere, but you can always declare it in your `cook`, as above.
 
 If your `restaurant` is getting bigger and your `cook` is getting overworked (think of the `switch` statement as his apron getting messier and messier), bring in a `gm` to `assembleTeam` and give you a `headChef` to manage it all.
 
-Split up your `cooks` into separate functions. Then do the following:
+Split up your `cook` into separate `cooks`. Then do the following:
 
 ```javascript
 import {gm} from 'diner';
@@ -123,7 +123,7 @@ Or, if you have a headChef system going on, you'll have a `buffet` instead of a 
 
 ```javascript
 const {math} = restaurant.serve();
-const {total} = math;
+console.log
 
 const {users} = restaurant.serve();
 const {userList} = users;
