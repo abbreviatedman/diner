@@ -1,4 +1,4 @@
-DinerJS is an implementation of Redux that uses a consistent metaphor so you can quickly grasp it.
+DinerJS is a re-implementation of Redux that uses a consistent metaphor so you can quickly grasp it.
 
 I'll be writing more about its design soon enough, and if you want to help make Diner better, please contribute! But in the meantime, here's just the basic usage:
 
@@ -111,7 +111,9 @@ Tell the `chef` to make that `ticket` into a _meal_:
 restaurant.prepare(ticket);
 ```
 
-Get your data onto the table where you can eat/use it:
+Now your data is on our central, read-only state tree.
+
+When you want your data back so you can eat/use it:
 
 ```javascript
 const {total} = restaurant.serve();
