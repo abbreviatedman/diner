@@ -1,5 +1,7 @@
 Diner.js is a re-implementation of Redux that uses a consistent metaphor so you can quickly grasp it.
 
+[Why use Diner?]
+
 I'll be writing more about its design soon enough, and if you want to help make Diner better, please contribute! But in the meantime, here's just the basic usage:
 
 Download it in the command line using `npm` or `yarn`:
@@ -164,3 +166,5 @@ Want to help? Do one of those things!
 Have your own ideas for how to improve Diner.js? Do one of _those_ things.
 
 Thanks for reading!
+
+[Why use Diner?]: ./whyDiner.md
