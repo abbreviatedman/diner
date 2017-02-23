@@ -1,10 +1,10 @@
 Diner.js is a re-implementation of Redux that uses a consistent metaphor so you can quickly grasp it.
 
-[Why use Diner?]
+#[View the full Diner docs.][docs]
 
-I'll be writing more about its design soon enough, and if you want to help make Diner better, please contribute! But in the meantime, here's just the basic usage:
+If you don't feel like reading the full docs, here's just the basic usage:
 
-Download it in the command line using `npm` or `yarn`:
+Download Diner in the command line using `npm` or `yarn`:
 
 ```javascript
 npm install diner
@@ -159,7 +159,7 @@ Now here's what we need to add to make diner a full-functioned Redux-like:
 
 1. Sanity checks. We have literally none! Are you passing the right things in the right places? WHO KNOWS.
 2. Clearer docs for those who've never used Redux before.
-3. The ability to incorporate middleware. ("Specials"?)
+3. The ability to incorporate middleware. ("Middlemen"?)
 
 Want to help? Do one of those things!
 
@@ -167,4 +167,4 @@ Have your own ideas for how to improve Diner.js? Do one of _those_ things.
 
 Thanks for reading!
 
-[Why use Diner?]: ./whyDiner.md
+[docs]: https://abbreviatedman.gitbooks.io/diner/
