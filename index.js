@@ -1,5 +1,5 @@
 const baconAndEggs = require('./baconAndEggs');
-// const
+
 const diner = {
   gm: {
     assembleTeam: (cooks) => {

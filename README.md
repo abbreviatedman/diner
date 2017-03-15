@@ -6,7 +6,7 @@ If you don't feel like reading the full docs, here's just the basic usage:
 
 Download Diner in the command line using `npm` or `yarn`:
 
-```javascript
+```bash
 npm install diner
 ```
 

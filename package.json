@@ -25,6 +25,8 @@
     "url": "https://github.com/abbreviatedman/diner/issues"
   },
   "homepage": "https://github.com/abbreviatedman/diner#readme",
-  "devDependencies": {},
+  "devDependencies": {
+    "gitbook-plugin-toggle-chapters": "0.0.3"
+  },
   "dependencies": {}
 }
