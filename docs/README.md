@@ -22,6 +22,6 @@
     As I carefully reimplemented Redux, it became more and more apparent how close a match the diner metaphor was to Redux, from the broad strokes of its architecture to its tiniest functions, and how to adapt the metaphor where it didn't match. And so I began not just to carefully reimplement it, but to think about how to encourage the use of this metaphor. That question, how best to ____ frameworks for usability, is far from answered.
 
     For more thoughts about metaphor, code, and usability, skip to the Diner Project section at the end of these docs. Or, let's march right on through to explaining
-    [how a diner-like architecture works [dinerArchitecture].
+    [how a diner-like architecture works] [dinerArchitecture].
 
 [dinerArchitecture]: ./introduction/quickIntro.md
