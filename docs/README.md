@@ -23,4 +23,4 @@
 
     For more thoughts about metaphor, code, and usability, skip to the Diner Project section at the end of these docs. Or, let's march right on through to explaining [how a diner-like architecture works][dinerArchitecture].
 
-[dinerArchitecture]: ./architecture/whatIsADinerArchitecture.md
+[dinerArchitecture]: ./introduction/quickIntro.md
