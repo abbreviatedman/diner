@@ -19,7 +19,7 @@
 * [General Manager and Head Chef](advanced/gm.md)
 
 ## Middlemen
-* [What's A Middleman?](middlemen/middlemen.md)
+* [What's A Middleman?](middlemen/whatAMiddleman.md)
 * [Async](middlemen/async.md)
 * [Connect](middlemen/connect.md)
 * [Logger](middlemen/logger.md)
