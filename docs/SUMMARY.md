@@ -1,8 +1,8 @@
 # Summary
 
 ## Introduction
-* [Quick Intro](./introduction/quickIntro.md)
-* [What's a Diner Architecture?](./introduction/what.md)
+* [Quick Intro](introduction/quickIntro.md)
+* [What's a Diner Architecture?](introduction/what.md)
 * [Why Build It That Way, Though?](introduction/why.md)
 
 ## Basic Usage
@@ -19,11 +19,11 @@
 * [General Manager and Head Chef](advanced/gm.md)
 
 ## Middlemen
-* [What's A Middleman?](advanced/middlemen.md)
-* [Thunk](advanced/thunk.md)
-* [Connect](advanced/connect.md)
-* [Logger](advanced/logger.md)
-* [Others](advanced/others.md)
+* [What's A Middleman?](middlemen/middlemen.md)
+* [Async](middlemen/async.md)
+* [Connect](middlemen/connect.md)
+* [Logger](middlemen/logger.md)
+* [Others](middlemen/others.md)
 
 ## Diner Architecture
 * [How To Make An Omelette Without Breaking Any Eggs](architecture/omelette.md)
