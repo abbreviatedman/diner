@@ -1,5 +1,5 @@
 ### Introduction
-  * [Quick Intro] (introduction/quickIntro.md)
+  * [Quick Intro] (./introduction/quickIntro.md)
   * [What's a Diner Architecture?] (introduction/what.md)
   * [Why Build It That Way, Though?] (introduction/why.md)
 ### Basic Usage
