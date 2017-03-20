@@ -1,10 +1,10 @@
 Diner.js is a re-implementation of Redux that uses a consistent metaphor so you can quickly grasp it.
 
-# [View the full Diner docs.][docs]
+The library is a tweaking and re-namespacing of [Redux][Redux]. You may benefit from using the library insted of Redux; you may benefit further still from [reading the Diner docs][docs], which explain Redux and Redux-like architectures using a diner metaphor.
 
 If you don't feel like reading the full docs, here's just the basic usage:
 
-Download Diner in the command line using `npm` or `yarn`:
+Download Diner.js in the command line using `npm` or `yarn`:
 
 ```bash
 npm install diner
@@ -125,7 +125,7 @@ Or, if you have a headChef system going on, you'll have a `buffet` instead of a 
 
 ```javascript
 const {math} = restaurant.serve();
-console.log
+const {total} = math;
 
 const {users} = restaurant.serve();
 const {userList} = users;
@@ -168,3 +168,4 @@ Have your own ideas for how to improve Diner.js? Do one of _those_ things.
 Thanks for reading!
 
 [docs]: https://abbreviatedman.gitbooks.io/dinerjs/
+[Redux]: http://redux.js.org/

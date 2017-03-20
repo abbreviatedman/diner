@@ -11,7 +11,7 @@
 You can use Diner one of two ways:
 
 1. The simpler way: use Redux, while reading these docs to understand it better.
-2. Download the [Diner.js](github.com/abbreviatedman/diner) library and use it to enforce upon yourself the Diner Metaphor. (Metaphorce!) You should probably still read these docs, though.
+2. Download the [Diner.js][Diner.js] library and use it to enforce upon yourself the Diner Metaphor. (Metaphorce!) You should probably still read these docs, though.
 
 
 ###Who should use Diner?
@@ -34,7 +34,8 @@ You can use Diner one of two ways:
 
 As I carefully reimplemented Redux, it became more and more apparent how close a match the diner metaphor was to Redux, from the broad strokes of its architecture to its tiniest functions, and how to adapt the metaphor where it didn't match. And so I began not just to carefully reimplement it, but to think about how to encourage the use of this metaphor. That question, how best to shape and describe frameworks for maximum usability, is far from answered.
 
-For more thoughts about metaphor, code, and usability, skip to the Diner Project section at the end of these docs. Or, let's march right on through to explaining
-[how a diner-like architecture works] [dinerArchitecture].
+For more thoughts about metaphor, code, and usability, skip to the [Diner Project][Diner Project] section at the end of these docs. Or, let's march right on through to explaining [what a Diner Architecture is][dinerArchitecture].
 
-[dinerArchitecture]: ./introduction/quickIntro.md
+[dinerArchitecture]: introduction/what.md
+[Diner.js]: http://www.github.com/abbreviatedman/diner
+[Diner Project]: dinerProject/future.md
