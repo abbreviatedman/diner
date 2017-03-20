@@ -6,4 +6,9 @@ The Diner Architecture is a complete blueprint for structuring your state manage
 
 But state management is an important part of your app, and a pain point if you don't have a carefully planned system.
 
-Now, when I say "Diner Architecture", I'm describing a state management architecture most famously used by Dan Abramov in designing Redux.
+Now, when I say "Diner Architecture", I'm describing a state management architecture most famously used by Dan Abramov in designing Redux (and since by a few others). There are other, similar architectures as well, and we'll discuss the Diner Architecture and alternatives in further detail in our [Diner Architecture][Diner Architecture] section.
+
+But first it may help to illustrate in code what a Diner Architecture looks like. Let's begin as all diners begin: with a [Menu][Menu].
+
+[Diner Architecture]: ../architecture/centrality.md
+[Menu]: ../basicUsage/menu.md

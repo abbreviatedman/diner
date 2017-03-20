@@ -12,6 +12,12 @@
 * [Cook](basicUsage/cook.md)
 * [Restaurant](basicUsage/restaurant.md)
 
+## Diner Architecture
+* [How To Make An Omelette Without Breaking Any Eggs](architecture/omelette.md)
+* [Immutability](architecture/immutability.md)
+* [Centrality](architecture/centrality.md)
+* [Purity](architecture/purity.md)
+
 ## Advanced Usage
 * [Advanced? Yes. Optional? Not really!](advanced/advanced.md)
 * [Diners Club Membership](advanced/dinersClub.md)
@@ -23,12 +29,6 @@
 * [Connect](middlemen/connect.md)
 * [Logger](middlemen/logger.md)
 * [Others](middlemen/others.md)
-
-## Diner Architecture
-* [How To Make An Omelette Without Breaking Any Eggs](architecture/omelette.md)
-* [Immutability](architecture/immutability.md)
-* [Centrality](architecture/centrality.md)
-* [Usability](architecture/usability.md)
 
 ## The Diner Project
 * [How Could This Happen?](dinerProject/how.md)

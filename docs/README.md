@@ -1,4 +1,5 @@
 #What's The Point Here?
+Let's explore!
 
 ###Why did I write Diner?
 
