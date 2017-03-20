@@ -1,6 +1,6 @@
 Diner.js is a re-implementation of Redux that uses a consistent metaphor so you can quickly grasp it.
 
-#[View the full Diner docs.][docs]
+# [View the full Diner docs.][docs]
 
 If you don't feel like reading the full docs, here's just the basic usage:
 
@@ -101,7 +101,7 @@ Now your state will hold an object with those keys, and each key will have the s
 
 So that's design. How do we _use_ it?
 
-Give your `order` to your `waiter`. He'll translate it to a `ticket` you can give to the `chef`. 
+Give your `order` to your `waiter`. He'll translate it to a `ticket` you can give to the `chef`.
 
 ```javascript
 const ticket = addWaiter(3);
@@ -167,4 +167,4 @@ Have your own ideas for how to improve Diner.js? Do one of _those_ things.
 
 Thanks for reading!
 
-[docs]: https://abbreviatedman.gitbooks.io/diner/
+[docs]: https://abbreviatedman.gitbooks.io/dinerjs/

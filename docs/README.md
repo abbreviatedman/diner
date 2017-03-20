@@ -1,17 +1,17 @@
-What's The Point Here?
+#What's The Point Here?
 
 ###Why did I write Diner?
 
 *I had this great idea:* a diner metaphor that helps people better understand how all of Redux's pieces fit together. Then I thought about how to get this idea out there. Should I write a blog post explaining the way I made sense of Redux?
 
-*That's when I had this _weird_ idea:* I'm a coder, right? So why not explain it by coding a library? It would work _just exactly_ like Redux, but it would change the method names, and a couple of the method shapes, and include copious documentation, all to encourage the use of this diner metaphor. Thus DinerJS was born.
+*That's when I had this _weird_ idea:* I'm a coder, right? So why not explain it by coding a library? It would work _just exactly_ like Redux, but it would change the method names, and a couple of the method shapes, and include copious documentation, all to encourage the use of this diner metaphor. Thus Diner.js was born.
 
 ###How do I use Diner?
 
 You can use Diner one of two ways:
 
 1. The simpler way: use Redux, while reading these docs to understand it better.
-2. Download [Diner.js](github.com/abbreviatedman/diner) and use it to enforce upon yourself the use of the metaphor. (Metaphorce!) You should probably still read these docs, though.
+2. Download the [Diner.js](github.com/abbreviatedman/diner) library and use it to enforce upon yourself the Diner Metaphor. (Metaphorce!) You should probably still read these docs, though.
 
 
 ###Who should use Diner?
