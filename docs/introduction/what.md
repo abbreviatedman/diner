@@ -1,4 +1,4 @@
-#What's A Diner Architecture?
+#What's A Diner Architecture For?
 
 Every app worth its salt has something you can _do_. And when you do something, it changes the state of your app. Whether you've Liked a page, toggled a sidebar menu, or zooming in on a photo, the app needs to keep track of what's happening, so it can know what it can do from that point. That's your state.
 
@@ -8,7 +8,7 @@ But state management is an important part of your app, and a pain point if you d
 
 Now, when I say "Diner Architecture", I'm describing a state management architecture most famously used by Dan Abramov in designing Redux (and since by a few others). There are other, similar architectures as well, and we'll discuss the Diner Architecture and alternatives in further detail in our [Diner Architecture][Diner Architecture] section.
 
-But first it may help to illustrate in code what a Diner Architecture looks like. Let's begin as all diners begin: with a [Menu][Menu].
+But now that you know what it's for, [What's A Diner Architecture Look Like?][What's A Diner Architecture Look Like?]
 
 [Diner Architecture]: ../architecture/centrality.md
-[Menu]: ../basicUsage/menu.md
+[What's A Diner Architecture Look Like?]: ./look.md
