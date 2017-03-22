@@ -24,7 +24,7 @@ You can use Diner one of two ways:
 ###Who shouldn't use Diner, though?
 
 - Those who understand Redux so thoroughly that they've written multiple Medium posts about it. (I'm being silly. _Obviously_ you don't need to understand a topic to write a Medium post about it.)
-- Those who code in Redux so effortlessly that others refer to them as the single source of truth.
+- Those who code in Redux so effortlessly that others refer to _them_ as the single source of truth.
 - Those who hate central state systems and are furthermore entirely sure they're never going to change their mind about it no never just uh _uh_.
 - Dan Abramov.
 
